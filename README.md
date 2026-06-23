@@ -10,7 +10,28 @@ Visit the official MusicNote Haven website:
 
 **https://musicnotehaven.ethercomm.eu**
 
-The website includes current public product information and an early public manual.
+## Early access
+
+Early access registration is available on the MusicNote Haven website:
+
+**https://musicnotehaven.ethercomm.eu/early-access/**
+
+Joining the early access list is not a purchase and does not create a payment obligation. It lets interested users receive release updates and qualify for the planned early adopter pricing when MIDI Manager becomes available.
+
+Planned early adopter pricing:
+
+- **Personal:** €19 early adopter price, planned regular price around €39
+- **Professional:** €49 early adopter price, planned regular price around €79–€89
+
+The website remains the official source for current early access details, pricing, discounts and availability.
+
+## Public manual
+
+The full public MIDI Manager manual is maintained on the MusicNote Haven website:
+
+**https://musicnotehaven.ethercomm.eu/manual/**
+
+This website manual is the single public source of truth. This GitHub repository only provides short public project information and links, so the manual does not have to be maintained in two places.
 
 ## What MIDI Manager is being built for
 
@@ -38,4 +59,3 @@ Public downloads are not available yet. More information will be published on th
 The MIDI Manager source code is private.
 
 This repository is an **information-only public repository**. It does not contain application source code, licensing code, admin tools or internal development documentation.
-
