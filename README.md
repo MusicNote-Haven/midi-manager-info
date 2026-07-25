@@ -1,92 +1,74 @@
 # MusicNote Haven MIDI Manager
 
-**MusicNote Haven MIDI Manager** is local desktop software for musicians, keyboard players, MIDI collectors and digital music archivists who work with large `.mid`, `.midi` and `.kar` collections.
+**MusicNote Haven MIDI Manager** is local desktop software for musicians, keyboard players, MIDI collectors and digital music archivists who manage large `.mid`, `.midi` and `.kar` collections.
 
-The **0.3.0 public preview is available now for Windows and Ubuntu/Kubuntu Linux**.
+## Current public test release: 0.9.0
 
-## Download the current public preview
+Version **0.9.0** is the functionally frozen Windows/Linux release candidate. It is being distributed to a controlled external tester group; useful feedback will determine genuine release-blocker fixes before 1.0.0.
 
-| Platform | Current build | Official download |
+| Platform | Accepted build | Official download |
 |---|---|---|
-| Windows | `MusicNote-Haven-MIDI-Manager-Setup-0.3.0.exe` | [Download Windows Setup.exe](https://musicnotehaven.ethercomm.eu/downloads/windows-setup/) |
-| Ubuntu/Kubuntu 24.04 amd64 | `musicnote-haven-midi-manager_0.3.0-1_amd64.deb` | [Download Linux `.deb`](https://musicnotehaven.ethercomm.eu/downloads/linux-deb/) |
+| Windows | `MusicNote-Haven-MIDI-Manager-Setup-0.9.0.exe` | [Download Windows Setup.exe](https://musicnotehaven.ethercomm.eu/downloads/windows-setup/) |
+| Ubuntu/Kubuntu 24.04 amd64 | `musicnote-haven-midi-manager_0.9.0-1_amd64.deb` | [Download Linux `.deb`](https://musicnotehaven.ethercomm.eu/downloads/linux-deb/) |
 
 - [All downloads and installation information](https://musicnotehaven.ethercomm.eu/downloads/)
-- [SHA-256 checksum file](https://musicnotehaven.ethercomm.eu/downloads/SHA256SUMS.txt)
-- [Version 0.3.0 release notes](https://musicnotehaven.ethercomm.eu/release-notes/)
-- [Windows installation manual](https://musicnotehaven.ethercomm.eu/manual/windows-install/)
-- [Linux installation manual](https://musicnotehaven.ethercomm.eu/manual/linux-install/)
+- [SHA-256 checksums](https://musicnotehaven.ethercomm.eu/downloads/SHA256SUMS.txt)
+- [Version 0.9.0 release notes](https://musicnotehaven.ethercomm.eu/release-notes/)
+- [Protected tester programme](https://musicnotehaven.ethercomm.eu/founding-testers/)
 - [Complete user manual](https://musicnotehaven.ethercomm.eu/manual/)
 
-The Windows preview is currently unsigned. Windows SmartScreen, Defender or browser reputation warnings may therefore appear. Verify the published SHA-256 checksum before installing.
+Verified source commit: `48c620068626e3df7b4b8da37b3d7d8740cf7a27`
 
-## Version 0.3.0 highlights
+The Windows installer is unsigned. SmartScreen, Defender, browser or antivirus reputation warnings may therefore appear. Verify the official SHA-256 checksum before installing.
 
-### Source Index and Deep MIDI Analysis
+## Main capabilities
 
-- Inventory supported MIDI/KAR files without modifying the source archive.
-- Refresh the Source Index incrementally so unchanged records do not need unnecessary reprocessing.
-- Run resumable Deep MIDI Analysis with **Start / Resume** and **Stop Safely** controls.
-- Review DONE, FAILED and Remaining pipeline counts.
-- Use technical, quality, protocol and detected-device information throughout the application.
+### Archive intelligence and safe organization
 
-### Search, review and safe organization
+- Incremental Source Index for `.mid`, `.midi` and `.kar` files.
+- Resumable Deep MIDI Analysis with safe stop/resume and visible pipeline counts.
+- Search, File Detail, Failed Analysis Review, device/manufacturer information and Review Queue.
+- Copy-first Library Organizer with planning, task coordination, collision checks, verification and recovery safeguards.
+- Physical Organized Library browsing with favorites and maintenance workflows.
 
-- Search indexed `.mid`, `.midi` and `.kar` collections.
-- Inspect files in File Detail and review failed analysis results.
-- Stage uncertain items in Review Queue.
-- Use Library Organizer for copy-first analysis, planning, execution and verification.
-- Build a cleaner Organized Library while keeping the original source files intact during normal organization workflows.
+### Playback and desktop workflow
 
-### Playback and managed-library workflows
-
-- Browse the physical Organized Library.
-- Play selected MIDI/KAR files with a user-supplied SoundFont or supported external output.
-- Mark favorites and prepare longer Playback Queue listening sessions.
-- Continue using other application areas while supported background analysis is running.
+- Managed FluidSynth/SoundFont playback where supported.
+- Playback Queue with selected-item playback, synchronized Now Playing status and explicit shuffle/replacement workflows.
+- Five-language first-run setup, Light/Dark themes and remembered cross-platform browse locations.
 
 ### Floppy Image Studio
 
-- Create FAT12 3.5-inch DS/DD 720 KB disk images from selected files.
-- Inspect individual images and recursively catalog folders containing `.img` files.
-- Preserve official long names alongside FAT12 8.3 names with sidecar manifests.
-- Generate per-disk, artist/title, master-catalog, Gotek-index and technical-problem PDF reports.
-- Export catalog data as CSV and JSON.
+- FAT12 720 KB and 1.44 MB IMG creation and inspection.
+- Generic, FlashFloppy, Korg, Roland and HxC guidance profiles within standard FAT12 scope.
+- Preview-first verified USB/Gotek export planning with no silent overwrite or target formatting.
+- Safe existing-IMG editing with immutable source, Save As, verified backup and rollback.
+- PDF, CSV and JSON disk/catalog reports and sidecar manifests.
+
+### Licensing, database and release safety
+
+- Trial / Free, Personal and Professional feature gates.
+- Signed online validation, offline grace and verified current-device release/transfer.
+- Verified database backups, configurable retention and migration rollback.
+- Public-package privacy audit and exact artifact checksum/provenance records.
 
 ## Safety and privacy
 
-- MIDI Manager runs locally; it does not upload the user's MIDI/KAR collection to the MusicNote Haven website.
-- Normal indexing, analysis and organization workflows are copy-first and do not modify the original source files.
-- Users should still keep independent backups and begin with small test folders.
-- SoundFonts are not bundled; users choose and configure their own legal SoundFont where needed.
+MIDI Manager runs locally and does not upload the user's MIDI/KAR collection. Normal organization is copy-first, but independent backups and small test folders remain recommended. SoundFonts are not bundled.
 
-## Current status
+## Tester programme
 
-- **Latest public preview:** 0.3.0
-- **Public platforms:** Windows Setup.exe and Ubuntu/Kubuntu 24.04 amd64 `.deb`
-- **Source code:** private
-- **Development:** active and continuing after the accepted 0.3.0 public artifacts
-
-Newer private development work is not automatically included in the current 0.3.0 installers. The official website remains the public source of truth for download availability, checksums, manuals, licensing information and known limitations.
-
-## Licensing, newsletter and Early Access
-
-The public preview can be downloaded now. Trial / Free, Personal and Professional licensing information is maintained on the official website:
-
-- [Compare license tiers](https://musicnotehaven.ethercomm.eu/licensing/)
-- [Join the newsletter](https://musicnotehaven.ethercomm.eu/newsletter/)
-- [Reserve an Early Access place](https://musicnotehaven.ethercomm.eu/early-access/)
-
-Early Access is a separate interest list for future release updates and planned early-adopter licensing information. Joining is not a purchase and does not create a payment obligation.
+Confirmed Early Access is required before a personal expiring link can be requested. The protected workflow uses anti-spam and rate-limiting controls without storing raw IP addresses with reports. Newsletter consent is separate. Up to 10 manually reviewed useful reports may qualify for a free Personal licence for the 1.0 generation; signup alone is insufficient.
 
 ## Official links
 
 - Website: https://musicnotehaven.ethercomm.eu
 - Downloads: https://musicnotehaven.ethercomm.eu/downloads/
+- Tester programme: https://musicnotehaven.ethercomm.eu/founding-testers/
 - Manual: https://musicnotehaven.ethercomm.eu/manual/
 - Release notes: https://musicnotehaven.ethercomm.eu/release-notes/
 - Support: musicnotehaven@ethercomm.eu
 
 ## Repository scope
 
-This repository is intentionally information-only. It does not contain the private application source code, private licensing material, administration tools, local databases or internal development documentation.
+This repository is information-only. It does not contain the private application source, private licensing material, administration tools, local databases or internal development documentation.
