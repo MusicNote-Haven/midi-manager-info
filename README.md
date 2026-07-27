@@ -14,7 +14,7 @@ Version **0.9.0** is the functionally frozen Windows/Linux release candidate. It
 - [All downloads and installation information](https://musicnotehaven.ethercomm.eu/downloads/)
 - [SHA-256 checksums](https://musicnotehaven.ethercomm.eu/downloads/SHA256SUMS.txt)
 - [Version 0.9.0 release notes](https://musicnotehaven.ethercomm.eu/release-notes/)
-- [Protected tester programme](https://musicnotehaven.ethercomm.eu/founding-testers/)
+- [Protected tester programme](https://musicnotehaven.ethercomm.eu/midi-manager-testers/)
 - [Complete user manual](https://musicnotehaven.ethercomm.eu/manual/)
 
 Verified source commit: `48c620068626e3df7b4b8da37b3d7d8740cf7a27`
@@ -64,7 +64,7 @@ Confirmed Early Access is required before a personal expiring link can be reques
 
 - Website: https://musicnotehaven.ethercomm.eu
 - Downloads: https://musicnotehaven.ethercomm.eu/downloads/
-- Tester programme: https://musicnotehaven.ethercomm.eu/founding-testers/
+- Tester programme: https://musicnotehaven.ethercomm.eu/midi-manager-testers/
 - Manual: https://musicnotehaven.ethercomm.eu/manual/
 - Release notes: https://musicnotehaven.ethercomm.eu/release-notes/
 - Support: musicnotehaven@ethercomm.eu
