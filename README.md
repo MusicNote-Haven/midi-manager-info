@@ -2,110 +2,100 @@
 
 **MusicNote Haven MIDI Manager** is local desktop software for musicians, keyboard players, MIDI collectors and digital music archivists who manage large `.mid`, `.midi` and `.kar` collections.
 
-## Current release status: 0.9.5
-
-The current controlled release uses one verified application source commit for both platforms:
-
-`71928dab173851b804b87fd72ba70d1b5585cb97`
+## Current production generation
 
 | Platform | Current build | Public status |
 |---|---|---|
-| Ubuntu/Kubuntu 24.04 amd64 | `musicnote-haven-midi-manager_0.9.5-1_amd64.deb` | **Available now** |
-| Windows 11 desktop/laptop | `MusicNote-Haven-MIDI-Manager-Setup-0.9.5.exe` | **Packaged runtime accepted; public installer pending code signing** |
+| Ubuntu/Kubuntu 24.04 amd64 | `musicnote-haven-midi-manager_1.0.1-1_amd64.deb` | **Available as a verified direct download** |
+| Windows desktop/laptop | MusicNote Haven MIDI Manager **1.0.0** | **Microsoft Store package 1.0.0.0 is in certification/publication** |
 
-Current public Linux artifact:
+Windows 1.0.0 and Linux 1.0.1 intentionally use different application version numbers while representing the same production generation.
 
-- Size: `74,159,456` bytes
-- SHA-256: `b858d635592b2163d8f8a0f1ded5115d396503f223bf0bfe0d407c5226bdb70a`
+### Linux 1.0.1-1
 
-The unsigned Windows 0.9.5 package is not offered as a public download. Code signing is being completed for Windows Smart App Control compatibility, and users are not asked to disable Windows security controls to install MIDI Manager.
+- Size: `74,217,972` bytes
+- SHA-256: `22d0abc281dde24277e0af9137666eadaa3c5d5d55f76d2e01d64acf0439f3d8`
+- Verified release source: `796422678a886de68d23df33904a0c57e38a6ab2`
 
-- [Downloads and current Windows status](https://musicnotehaven.ethercomm.eu/downloads/)
+### Windows 1.0.0
+
+- Store package version: `1.0.0.0`
+- Package size: `67,520,390` bytes
+- SHA-256: `39a5349947aea0eb211ffe821c049b802aee8f99e0fc7140ad625398f0f6a8d2`
+- Corrected production source: `d081632e19524b1d733aa627e52007433f0a5c7d`
+- Distribution: Microsoft Store
+
+Microsoft Store manages Windows signing and publication. The same Store listing becomes current after certification and publication complete.
+
+- [Downloads](https://musicnotehaven.ethercomm.eu/downloads/)
+- [Windows in Microsoft Store](https://musicnotehaven.ethercomm.eu/downloads/windows-store/)
 - [Current public SHA-256 checksums](https://musicnotehaven.ethercomm.eu/downloads/SHA256SUMS.txt)
-- [Complete website release notes](https://musicnotehaven.ethercomm.eu/release-notes/)
-- [Detailed 0.9.5 GitHub release notes](RELEASE_NOTES_0.9.5.md)
-- [Protected tester programme](https://musicnotehaven.ethercomm.eu/midi-manager-testers/)
+- [Website release notes](https://musicnotehaven.ethercomm.eu/release-notes/)
+- [Detailed 1.0 production release notes](RELEASE_NOTES_1.0.md)
 - [Complete user manual](https://musicnotehaven.ethercomm.eu/manual/)
+- [Early Access](https://musicnotehaven.ethercomm.eu/early-access/)
 
-## 0.9.5 highlights
+## Production highlights
 
-### Five-language runtime interface
+### Search, analysis and explainability
 
-Runtime localization and guidance were completed and hardened across English, Dutch, German, French and Spanish. This includes Dashboard/status text, Library Organizer, Licensing, Maintenance, First Run, FAT12/IMG and USB/Gotek report, output and error messages. Central tooltip behavior now uses wrapped rich text with a consistent maximum width.
+- Search & Filter combines filename, metadata, device/mode and analysis-oriented discovery in one current workflow.
+- Analysis state distinguishes indexed, enriched/deep-analyzed, failed and pending work.
+- File Detail presents analysis provenance, evidence and score explanation.
+- Review Queue supports targeted reanalysis without hiding uncertain or failed items.
 
-### Large libraries and responsive UI
+### Safe organization
 
-- Organized Library now uses incremental database-backed browsing instead of loading the full library up front.
-- Runtime acceptance covered 5,375 rows with fast opening, incremental scrolling/loading, search, selection and liked-state handling.
-- Dashboard cards and command rows adapt to available width.
-- Database tables expose clear resizable columns with accepted width persistence.
-- Playback Queue reads its library source from the database and received command/layout polish for queue workflows.
+- Library Organizer remains preview/review first and operates copy-first for normal organization.
+- Planned targets can be reviewed before execution.
+- Execution verifies organized copies while source preservation remains explicit.
+- Trial/Free limits apply to Organized Library output rather than blocking analysis of a larger source collection.
 
-### Analysis trust, review and recovery
+### Large libraries and playback
 
-- Indexed records, successfully enriched/deep-analyzed files, failures and remaining work are presented as distinct states.
-- Dashboard/source-index invalidation was hardened so status does not keep presenting stale analysis or source-state information after relevant changes.
-- Failed-analysis and review/recovery paths keep problem files visible for inspection.
-- User-facing recovery wording was simplified so the next safe action is clearer.
+- Organized Library uses incremental database-backed browsing.
+- Search, row selection and liked-state operations remain available while more rows load.
+- Playback Queue uses a database-backed source and supports managed FluidSynth or external MIDI output workflows.
 
-### MIDI device discovery
+### Floppy Image Studio
 
-- MIDI Files by Device supports result paging for large collections.
-- MIDI Type 0/1 filtering is available.
-- GM2 detection and filtering are available.
-- Device-oriented counts and filtering use the indexed database rather than depending on one fully materialized result view.
+- Disk Image Creator supports standard FAT12 720 KB and 1.44 MB images.
+- Machine profiles provide profile-aware defaults while remaining user-selectable.
+- IMG Viewer supports individual image inspection, folder catalogs and PDF/CSV/JSON reports.
+- Existing IMG editing retains conservative Save As, backup and rollback behavior.
 
-### Library Organizer and Playback Queue
+### Localization and maintenance
 
-- Library Organizer controls and status text use clearer review/execute wording and safer feedback around long-running database work.
-- Large source folders may be indexed and analyzed normally. Trial/Free guidance now makes clear that the 100-file cap applies to Organized Library output, not source analysis.
-- Incremental Organized Library browsing keeps search, row selection and liked-state actions available while more rows load.
-- Playback Queue command rows are adaptive and its database-backed source avoids depending on a fully materialized Organized Library view.
-
-### Floppy, IMG and Gotek workflows
-
-- Floppy Image Studio supports FAT12 720 KB and 1.44 MB IMG creation and inspection.
-- Existing IMG editing remains source-safe with Save As, verified backup and rollback behavior.
-- USB/Gotek export planning remains preview-first and does not silently format or overwrite targets.
-- Korg/Gotek and Roland guidance remains deliberately conservative and describes supported standard FAT12 workflows rather than claiming universal proprietary-format compatibility.
-- PDF, CSV and JSON disk/catalog reports and sidecar manifests remain available.
-
-### Safety, licensing and package integrity
-
-- Professional users no longer see Trial/Free limit wording where it is not relevant.
-- Cross-platform path/runtime behavior and remembered browse locations were validated on Linux and Windows.
-- Public-package privacy auditing excludes Admin components, private keys, signing keys, local databases, private configuration, SoundFonts and MIDI/KAR collections.
-- Windows Setup.exe and Linux `.deb` provenance remain tied to the same clean pushed source commit and centralized application version.
-- Release-readiness validation covered Python compilation, language consistency, release/backlog/manifest contracts, package audits and targeted runtime contracts before packaging.
-
-## Tester-driven Road to 1.0
-
-Current tester evidence now drives the final path to:
-
-- **Windows 1.0.0**
-- **Linux 1.0.1**
-
-No ordinary feature expansion is planned during the final tester phase. Genuine release blockers and useful tester evidence determine any remaining changes before those milestones.
-
-Not every tester suggestion is claimed as completed in 0.9.5. Broader DAW integration, richer contextual online help, score explainability, additional device/market ideas and other post-1.0 work remain roadmap items.
+- Runtime interface and guidance are available in English, Dutch, German, French and Spanish.
+- Database health, backup, repair and rollback tooling remains available.
+- Project Health and maintenance workflows provide read-only checks and explicit plans before changes.
 
 ## Safety and privacy
 
-MIDI Manager runs locally and does not upload the user's MIDI/KAR collection. Normal organization is copy-first, but independent backups and small test folders remain recommended. SoundFonts are not bundled.
+MIDI Manager runs locally and does not upload the user's MIDI/KAR collection. Independent backups remain recommended before major archive operations. SoundFonts are not bundled.
 
-## Tester programme
+## Early Access and tester status
 
-Confirmed Early Access is required before a personal expiring test link can be requested. The protected workflow uses anti-spam and rate-limiting controls without storing raw IP addresses with reports. Newsletter consent is separate. Up to 10 manually reviewed useful reports may qualify for a free Personal licence for the 1.0 generation; signup alone is insufficient.
+New recruitment for free tester licences is closed.
+
+The Early Access page now provides a limited launch offer for the **first 50 confirmed reservations**:
+
+- Personal: €19 instead of €39
+- Professional: €49 instead of €89
+
+A reservation is not a purchase, and a place is counted only after email confirmation.
 
 ## Official links
 
 - Website: https://musicnotehaven.ethercomm.eu
 - Downloads: https://musicnotehaven.ethercomm.eu/downloads/
-- Tester programme: https://musicnotehaven.ethercomm.eu/midi-manager-testers/
+- Windows Store: https://musicnotehaven.ethercomm.eu/downloads/windows-store/
 - Manual: https://musicnotehaven.ethercomm.eu/manual/
 - Release notes: https://musicnotehaven.ethercomm.eu/release-notes/
+- Early Access: https://musicnotehaven.ethercomm.eu/early-access/
+- Newsletter: https://musicnotehaven.ethercomm.eu/newsletter/
 - Support: musicnotehaven@ethercomm.eu
 
 ## Repository scope
 
-This repository provides public product information for MusicNote Haven MIDI Manager. The application source repository remains private during active development and controlled testing.
+This repository provides public product and release information for MusicNote Haven MIDI Manager. Historical release notes remain available and are not rewritten.
