@@ -1,29 +1,36 @@
 # MusicNote Haven MIDI Manager
 
-**MusicNote Haven MIDI Manager 1.3.1** is local desktop software for musicians, keyboard players, MIDI collectors and digital music archivists who manage `.mid`, `.midi` and `.kar` collections.
+**MusicNote Haven MIDI Manager 1.3.2** is local desktop software for musicians, keyboard players, MIDI collectors and digital music archivists who manage `.mid`, `.midi` and `.kar` collections.
 
 ## Current production releases
 
 | Platform | Current build | Public status |
 |---|---|---|
-| Windows desktop/laptop | App `1.3.1`, Microsoft Store package `1.3.1.0` | **Available in Microsoft Store** |
-| Ubuntu 26.04 LTS amd64 | App `1.3.1`, Debian package `1.3.1-1` | **Available as verified direct download** |
+| Windows desktop/laptop | App `1.3.2`, Microsoft Store package `1.3.2.0` | **Available in Microsoft Store** |
+| Ubuntu 26.04 LTS amd64 | App `1.3.2`, Debian package `1.3.2-1` | **Available as verified direct download** |
 
-Both packages were built from accepted shared source `28c224063d08525c64d9b838b59a387636d6d6fa`.
+Both packages were built from accepted shared source `a5d8b02f32ffed9e2a971eb494492a37c319901b`.
 
-### Linux 1.3.1-1
+### Linux 1.3.2-1
 
-- File: `musicnote-haven-midi-manager_1.3.1-1_amd64.deb`
-- Size: `78,247,846` bytes
-- SHA-256: `dac0a26aa757666ffc4ba67261f1f495d5109782acf770503f92222c13a83f8c`
-- Accepted source: `28c224063d08525c64d9b838b59a387636d6d6fa`
+- File: `musicnote-haven-midi-manager_1.3.2-1_amd64.deb`
+- Size: `78,251,520` bytes
+- SHA-256: `0f879a6b82320e023e58a85029e29a89afae6fb1a81c6d68c3f7b5e2f4901917`
+- Accepted source: `a5d8b02f32ffed9e2a971eb494492a37c319901b`
 
-### Windows 1.3.1
+### Windows 1.3.2
 
-- Microsoft Store package: `1.3.1.0`
+- Microsoft Store package: `1.3.2.0`
 - Store ID: `9P9PKX8XNDWF`
-- Submitted package SHA-256: `0bf34163c61375ffc68b916de887c37436f9c28b246c406f4caf12706fa1788e`
-- Windows 11 packaged runtime smoke test: passed before Store submission
+- Windows package SHA-256: `022443611aa7d17b5d650ae644859ebc9338d739f80a48cc62f469e196513e31`
+- Windows 11 packaged runtime smoke test: passed on ZBOOKWIN
+
+## Version 1.3.2 stability highlights
+
+- Corrected Qt background-worker cleanup across app workflows for improved reliability during long-running scans.
+- Faster Organization analysis candidate selection for large MIDI/KAR libraries, including files returned to Analyzer.
+- Stop Safely can interrupt candidate-selection database work rather than waiting for the entire query to finish.
+- Version 1.x licence terms and the copy-first safety model are unchanged.
 
 ## Version 1.3.1 maintenance highlights
 
@@ -49,6 +56,7 @@ Core library work is local. If the optional Online Artist & Song Discovery fallb
 
 ## Release notes in this repository
 
+- [1.3.2 stability release](RELEASE_NOTES_1.3.2.md)
 - [1.3.1 maintenance release](RELEASE_NOTES_1.3.1.md)
 - [1.3.0 stable release](RELEASE_NOTES_1.3.0.md)
 - [1.2.2 Linux stable release](RELEASE_NOTES_1.2.2.md)
