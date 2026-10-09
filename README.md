@@ -1,29 +1,36 @@
 # MusicNote Haven MIDI Manager
 
-**MusicNote Haven MIDI Manager 1.3.0** is local desktop software for musicians, keyboard players, MIDI collectors and digital music archivists who manage `.mid`, `.midi` and `.kar` collections.
+**MusicNote Haven MIDI Manager 1.3.1** is local desktop software for musicians, keyboard players, MIDI collectors and digital music archivists who manage `.mid`, `.midi` and `.kar` collections.
 
 ## Current production releases
 
 | Platform | Current build | Public status |
 |---|---|---|
-| Windows desktop/laptop | App `1.3.0`, Microsoft Store package `1.3.0.0` | **Available in Microsoft Store** |
-| Ubuntu 26.04 LTS amd64 | App `1.3.0`, Debian package `1.3.0-1` | **Available as verified direct download** |
+| Windows desktop/laptop | App `1.3.1`, Microsoft Store package `1.3.1.0` | **Available in Microsoft Store** |
+| Ubuntu 26.04 LTS amd64 | App `1.3.1`, Debian package `1.3.1-1` | **Available as verified direct download** |
 
-Both packages were built from accepted clean source `435fd675b18eac2e1b3efef76ba59e50ec424052`.
+Both packages were built from accepted shared source `28c224063d08525c64d9b838b59a387636d6d6fa`.
 
-### Linux 1.3.0-1
+### Linux 1.3.1-1
 
-- File: `musicnote-haven-midi-manager_1.3.0-1_amd64.deb`
-- Size: `78,246,750` bytes
-- SHA-256: `9cf6b403f6325e774ec43abd77c595c047c4ff392a6d255d8c827fe047c58c24`
-- Accepted source: `435fd675b18eac2e1b3efef76ba59e50ec424052`
+- File: `musicnote-haven-midi-manager_1.3.1-1_amd64.deb`
+- Size: `78,247,846` bytes
+- SHA-256: `dac0a26aa757666ffc4ba67261f1f495d5109782acf770503f92222c13a83f8c`
+- Accepted source: `28c224063d08525c64d9b838b59a387636d6d6fa`
 
-### Windows 1.3.0
+### Windows 1.3.1
 
-- Microsoft Store package: `1.3.0.0`
+- Microsoft Store package: `1.3.1.0`
 - Store ID: `9P9PKX8XNDWF`
-- Submitted package SHA-256: `abec10f30ce086532b4028069afb98e1032f508d50db2ae074e735b8bf80319c`
-- Installed Store-update runtime acceptance: passed
+- Submitted package SHA-256: `0bf34163c61375ffc68b916de887c37436f9c28b246c406f4caf12706fa1788e`
+- Windows 11 packaged runtime smoke test: passed before Store submission
+
+## Version 1.3.1 maintenance highlights
+
+- Source Index background-worker lifetime and cleanup were hardened for long Linux runs.
+- Resume and Stop Safely keep completed Source Index work and follow the corrected worker/thread cleanup lifecycle.
+- Controlled MIDI/RMID recovery now accepts additional valid files while preserving explicit parser diagnostics.
+- Initial window sizing was improved without changing the established workflow.
 
 ## Version 1.3 highlights
 
@@ -39,6 +46,14 @@ Both packages were built from accepted clean source `435fd675b18eac2e1b3efef76ba
 ## Local-first safety and privacy
 
 Core library work is local. If the optional Online Artist & Song Discovery fallback is used, only candidate artist/title text is sent. MIDI/KAR contents, local paths, filenames and profile data are not sent.
+
+## Release notes in this repository
+
+- [1.3.1 maintenance release](RELEASE_NOTES_1.3.1.md)
+- [1.3.0 stable release](RELEASE_NOTES_1.3.0.md)
+- [1.2.2 Linux stable release](RELEASE_NOTES_1.2.2.md)
+- [1.2.1 Windows stable release](RELEASE_NOTES_1.2.1.md)
+- Historical 1.1.0, 1.0.x and 0.9.x release notes remain preserved.
 
 ## Official links
 
